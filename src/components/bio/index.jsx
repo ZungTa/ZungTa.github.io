@@ -34,8 +34,9 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
+                  {/* TODO: It should Extract to "LinkWrap" Componet */}
                   {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
+                    <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferer">GitHub</a>
                   )}
                   {social.medium && (
                     <a href={`https://medium.com/${social.medium}`}>Medium</a>
