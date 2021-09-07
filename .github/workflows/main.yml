@@ -13,23 +13,24 @@ jobs:
       - name: yarn install
         run: yarn install
 
-      # - name: gatsby build
-      #   env:
-      #     GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
-      #   run: yarn build
-
-      # - name: deploy
-      #   uses: maxheld83/ghpages@v0.2.1
-      #   env:
-      #     GH_PAT: ${{ secrets.ACCESS_TOKEN }}
-      #     BUILD_DIR: 'public/'
-      #     BRANCH: 'main'
-      - name: deploy
+      - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
-        runs:
-          using: "docker"
-          image: "Dockerfile"
+        run: yarn build
+
+      - name: deploy
+        # uses: maxheld83/ghpages@v0.2.1
+        uses: zungta/ghpages@v0.2.1
+        env:
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: 'public/'
+          BRANCH: 'main'
+      # - name: deploy
+      #   env:
+      #     GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
+      #   runs:
+      #     using: "docker"
+      #     image: "Dockerfile"
         # run: |
         #   git config user.name ZungTa
         #   git config user.email quddnr0708@gmail.com
