@@ -27,4 +27,7 @@ jobs:
       - name: deploy
       #   env:
       #     GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
-        run: yarn deploy
+        run: |
+          git config user.name ZungTa,
+          git config user.email quddnr0708@gmail.com,
+          yarn deploy
