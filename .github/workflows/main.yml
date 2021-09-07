@@ -25,9 +25,9 @@ jobs:
       #     BUILD_DIR: 'public/'
       #     BRANCH: 'main'
       - name: deploy
-      #   env:
-      #     GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
+        env:
+          GH_API_KEY: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          git config user.name ZungTa,
-          git config user.email quddnr0708@gmail.com,
+          git config user.name ZungTa
+          git config user.email quddnr0708@gmail.com
           yarn deploy
