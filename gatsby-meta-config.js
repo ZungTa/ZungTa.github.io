@@ -3,7 +3,7 @@ module.exports = {
   description: `ZungTa's Blog`,
   author: `ZungTa`,
   introduction: `ZungTa입니다.`,
-  siteUrl: `http://zungta.com`, // Your blog site url
+  siteUrl: `https://zungta.com/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `https://github.com/ZungTa`, // Your GitHub account
