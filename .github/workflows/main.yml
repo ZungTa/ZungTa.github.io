@@ -23,4 +23,4 @@ jobs:
         env:
           GH_PAT: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: 'public/'
-          # BRANCH: 'main'
+          BRANCH: 'main'
