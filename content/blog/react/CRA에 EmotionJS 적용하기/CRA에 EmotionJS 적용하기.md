@@ -136,7 +136,7 @@ npm i @emotion/react
 
 css prop 을 사용하려면 설치해서 적용해줘야 하는 것 같다.
 
-[babel-preset-css-prop]([https://emotion.sh/docs/@emotion/babel-preset-css-prop](https://emotion.sh/docs/@emotion/babel-preset-css-prop))
+[babel-preset-css-prop](https://emotion.sh/docs/@emotion/babel-preset-css-prop)
 - babel-preset-css-prop: https://emotion.sh/docs/@emotion/babel-preset-css-prop](https://emotion.sh/docs/@emotion/babel-preset-css-prop
 
 ```bash
