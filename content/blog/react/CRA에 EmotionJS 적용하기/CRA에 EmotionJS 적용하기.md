@@ -71,8 +71,6 @@ npm i -D @emotion/babel-plugin
 
 ![Error Page](images/002.png)
 
-Error Page
-
 ## 두번째 시도
 
 첫번째 시도 내용이 짧아보이지만 실제로는 이것저것 검색해보고 적용하느라 4시간쯤 삽질하였다.
@@ -195,8 +193,6 @@ export default App;
 
 ![Browser Screen](images/003.png)
 
-Browser Screen
-
 적용이 잘 되었다.
 
 위와 같이 하위 class까지도 적어서 적용할 수 있다.
@@ -282,8 +278,6 @@ export default App;
 이렇게 적용하고 실행하면 되는 듯 하다가 에러가 뜬다.
 
 ![Error Page](images/004.png)
-
-Error Page
 
 공식문서에서 `/** @jsx jsx */` 를 최상단에 쓰면 babel plugin 없이 순수 타입스크립트로 `css prop` 이 되게 할 수 있다고 하는데 적용되지 않는다.
 

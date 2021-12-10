@@ -1,34 +1,35 @@
-import React, { useEffect } from 'react'
-import { graphql } from 'gatsby'
+import React, { useEffect } from 'react';
+import { graphql } from 'gatsby';
 
-import * as Elements from '../components/elements'
-import { Layout } from '../layout'
-import { Head } from '../components/head'
-import { PostTitle } from '../components/post-title'
-import { PostDate } from '../components/post-date'
-import { PostContainer } from '../components/post-container'
-import { SocialShare } from '../components/social-share'
-import { SponsorButton } from '../components/sponsor-button'
-import { Bio } from '../components/bio'
-import { PostNavigator } from '../components/post-navigator'
-import { Disqus } from '../components/disqus'
-import { Utterances } from '../components/utterances'
-import * as ScrollManager from '../utils/scroll'
+import * as Elements from '../components/elements';
+import { Layout } from '../layout';
+import { Head } from '../components/head';
+import { PostTitle } from '../components/post-title';
+import { PostDate } from '../components/post-date';
+import { PostContainer } from '../components/post-container';
+import { SocialShare } from '../components/social-share';
+import { SponsorButton } from '../components/sponsor-button';
+import { Bio } from '../components/bio';
+import { PostNavigator } from '../components/post-navigator';
+import { Disqus } from '../components/disqus';
+import { Utterances } from '../components/utterances';
+import * as ScrollManager from '../utils/scroll';
 
-import '../styles/code.scss'
-import 'katex/dist/katex.min.css'
+import '../styles/code.scss';
+import 'katex/dist/katex.min.css';
 
 export default ({ data, pageContext, location }) => {
   useEffect(() => {
-    ScrollManager.init()
-    return () => ScrollManager.destroy()
-  }, [])
+    ScrollManager.init();
+    return () => ScrollManager.destroy();
+  }, []);
 
-  const post = data.markdownRemark
-  const metaData = data.site.siteMetadata
-  const { title, comment, siteUrl, author, sponsor } = metaData
-  const { disqusShortName, utterances } = comment
-  const { title: postTitle, date } = post.frontmatter
+  const post = data.markdownRemark;
+  console.log('post? ', post);
+  const metaData = data.site.siteMetadata;
+  const { title, comment, siteUrl, author, sponsor } = metaData;
+  const { disqusShortName, utterances } = comment;
+  const { title: postTitle, date } = post.frontmatter;
   console.log('frontmatter date? ', date);
 
   return (
@@ -54,8 +55,8 @@ export default ({ data, pageContext, location }) => {
       )}
       {!!utterances && <Utterances repo={utterances} />}
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -83,4 +84,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

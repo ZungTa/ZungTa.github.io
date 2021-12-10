@@ -1,4 +1,4 @@
-const metaConfig = require('./gatsby-meta-config')
+const metaConfig = require('./gatsby-meta-config');
 
 module.exports = {
   siteMetadata: metaConfig,
@@ -60,6 +60,13 @@ module.exports = {
               inlineCodeMarker: '%',
             },
           },
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow',
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-autolink-headers`,
@@ -96,8 +103,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://your-blog.netlify.app',
-        sitemap: 'https://your-blog.netlify.app/sitemap.xml',
+        host: 'https://zungta.com',
+        sitemap: 'https://zungta.com/sitemap.xml',
         policy: [
           {
             userAgent: '*',
@@ -115,4 +122,4 @@ module.exports = {
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
   ],
-}
+};
