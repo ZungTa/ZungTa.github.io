@@ -207,7 +207,7 @@ Browser Screen
 
 이제 타입스크립트에 적용해보도록 하겠다.
 
-[emotion typescript 공식문서]([https://emotion.sh/docs/typescript](https://emotion.sh/docs/typescript))
+[emotion typescript 공식문서](https://emotion.sh/docs/typescript)
 
 - CRA로 Typescript React App 생성
 
@@ -310,4 +310,4 @@ const divCss = css`
 `;
 ```
 
-이런 식으로 `backtick` 으로 함수를 사용할 때 vscode의 `vscode-styled-components` [확장]([https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components))을 설치하면 더 편리하게 사용할 수 있다.
+이런 식으로 `backtick` 으로 함수를 사용할 때 vscode의 `vscode-styled-components` [확장](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)을 설치하면 더 편리하게 사용할 수 있다.
