@@ -47,9 +47,7 @@ const divCss = css`
 export default App;
 ```
 
-![Browser Screen](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b32c0c08-0075-4bbe-88dc-a0f5ed07161b/Untitled.png)
-
-Browser Screen
+![Browser Screen](./images/001.png)
 
 그래서 `@emotion/babel-plugin` 을 설치하고 `.babelrc` 파일을 생성하여 적용해 보았다.
 
@@ -71,7 +69,7 @@ npm i -D @emotion/babel-plugin
 
 공식문서에 `/** @jsx jsx */` 를 상단에 추가하라는 내용이 있어서 추가해봤지만 오히려 에러만 뜨고 이것저것 해봐도 해결이 되지 않았다.
 
-![Error Page](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/089f1437-0609-408c-8048-c8e1a0bf6010/Untitled.png)
+![Error Page](images/002.png)
 
 Error Page
 
@@ -195,7 +193,7 @@ const divCss = css`
 export default App;
 ```
 
-![Browser Screen](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9147275-cbb1-4e7e-baea-c9b73f89a605/Untitled.png)
+![Browser Screen](images/003.png)
 
 Browser Screen
 
@@ -283,7 +281,7 @@ export default App;
 
 이렇게 적용하고 실행하면 되는 듯 하다가 에러가 뜬다.
 
-![Error Page](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3448a9f6-013e-4633-a103-2d041035b29b/Untitled.png)
+![Error Page](images/004.png)
 
 Error Page
 
