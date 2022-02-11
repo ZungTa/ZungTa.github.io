@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://zungta.com/sitemap.xml
+Host: https://zungta.com
